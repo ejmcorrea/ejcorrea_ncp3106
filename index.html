@@ -1,0 +1,2054 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ej Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: linkk;
+            src: url(linkk.otf);
+        }
+
+        @font-face {
+            font-family: font;
+            src: url(font.otf);
+        }
+
+        @font-face {
+            font-family: alevia;
+            src: url(alevia.otf);
+        }
+
+        body {
+            background-color: #1a1a1a;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 7920px;
+            display: flex;
+            scroll-behavior: smooth;
+
+        }
+        .home{
+            margin-top: 0px;
+        }
+
+        .image-container2 {
+            cursor: pointer;
+            position: absolute;
+            right:880px;
+            top: 100px;
+            max-width: 100%;
+            display: flex;
+            height: 600px;
+        }
+
+        .image2 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .image2:hover {
+            transform: scale(1.2);
+        }
+
+
+        .image-container1 {
+            position: absolute;
+            right: 60px;
+            top: 1900px;
+            max-width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            height: 600px;
+        }
+
+        .image1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .image1:hover {
+            transform: scale(1.1);
+        }
+
+
+        .hello {
+            font-size: 25px;
+            margin-top: 230px;
+            right: 620px;
+            color: #e6e6e6;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: font;
+        }
+
+        .introduce {
+            font-size: 140px;
+            margin-top: 230px;
+            right: 100px;
+            color: #c7ba45;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: font;
+            font-weight: bold;
+            text-shadow: rgba(62, 66, 66, 0.44) -27px 84px 5px;
+            animation: shadowFade 3s ease-in-out infinite;
+        }
+
+        @keyframes shadowFade {
+            0% {
+                text-shadow: rgba(62, 66, 66, 0.44) -27px 84px 5px;
+            }
+
+            100% {
+                text-shadow: rgba(62, 66, 66, 0) -27px 84px 15px;
+            }
+        }
+
+        .cpe {
+            font-size: 30px;
+            margin-top: 650px;
+            right: 495px;
+            color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: font;
+            
+        }
+
+      
+        .sidebar {
+            position: absolute;
+            top: 960px;
+            left: 212px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: linkk;
+            font-size: 130px;
+            text-shadow: rgba(62,66,66,1) 200px 0px 5px;
+        }
+
+        .sidebar a {
+            color: #e6e6e6;
+            padding: 0px 0;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .sidebar:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar1 {
+            position: absolute;
+            top: 1070px;
+            left: 231px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: linkk;
+            font-size: 130px;
+            text-shadow: rgba(62,66,66,1) 200px 0px 5px;
+        }
+
+        .sidebar1 a {
+            color: #e6e6e6;
+            padding: 0px 0;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .sidebar1:hover {
+            transform: scale(1.1);
+
+        }
+
+        .sidebar2 {
+            position: absolute;
+            top: 1180px;
+            left: 287px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: linkk;
+            font-size: 130px;
+            text-shadow: rgba(62,66,66,1) 200px 0px 5px;
+
+        }
+
+        .sidebar2 a {
+            color: #e6e6e6;
+            padding: 0px 0;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .sidebar2:hover {
+            transform: scale(1.1);
+
+        }
+
+        .sidebar3 {
+            text-shadow: rgba(62,66,66,1) 200px 0px 5px;
+            position: absolute;
+            top: 1290px;
+            left: 328px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: linkk;
+            font-size: 130px;
+        }
+
+        .sidebar3 a {
+            color: #e6e6e6;
+            padding: 0px 0;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .sidebar3:hover {
+            transform: scale(1.1);
+
+        }
+
+        .sidebar4 {
+            position: absolute;
+            text-shadow: rgba(62,66,66,1) 200px 0px 5px;
+            top: 1405px;
+            left: 285px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: linkk;
+            font-size: 130px;
+        }
+
+        .sidebar4 a {
+            color: #e6e6e6;
+            padding: 0px 0;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .sidebar4:hover {
+            transform: scale(1.1);
+        }
+ 
+        .gmail {
+            font-size: 20px;
+            margin-top: 1430px;
+            right: 60px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: linkk;
+
+        }
+
+        .web-icons {
+            position: absolute;
+            top: 1500px;
+            right: 60px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .web-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .web-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .web-icon:hover {
+            transform: scale(1.2);
+            box-shadow: 4px 8px 12px rgba(225, 14, 14, 0.3);
+        }
+
+        .web-icon:hover img {
+            transform: rotate(360deg);
+            
+        }
+        .down{
+            margin-top: 850px;
+        }
+        .down-icons {
+           
+            position: absolute;
+            top: 640px;
+            right: 20px;
+            display: flex;
+        }
+        .down-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .down-icon img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .down-icon:hover {
+            transform: scale(1.2);
+           
+        }
+        .down-icon:hover img {
+            transition: transform 0.4s ease-in-out,;
+        }
+
+        .up{
+            margin-top: 0px;
+        }
+        .up-icons {
+            
+            position: absolute;
+            top: 7790px;
+            right: 20px;
+            display: flex;
+        }
+        .up-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .up-icon img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .up-icon:hover {
+            transform: scale(1.2);
+           
+        }
+        .up-icon:hover img {
+            transition: transform 0.4s ease-in-out,;
+        }
+
+
+        .aboutme {
+            font-size: 160px;
+            margin-top: 1700px;
+            right: 350px;
+            color: #c7ba45;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: linkk;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: rgba(62, 66, 66, 0.44) -27px 84px 5px;
+            animation: shadowFade 3s ease-in-out infinite;
+        }
+
+        @keyframes shadowFade {
+            0% {
+                text-shadow: rgba(62, 66, 66, 0.44) -27px 84px 5px;
+            }
+
+            100% {
+                text-shadow: rgba(62, 66, 66, 0) -27px 84px 15px;
+            }
+        }
+        .aboutme span{
+  transition: .5s linear
+}
+.aboutme:hover span:nth-child(1){
+  margin-right: 5px
+}
+.aboutme:hover span:nth-child(2){
+  margin-left: 30px
+}
+.aboutme:hover span{
+  color: #e6e6e6;
+  text-shadow: 0 0 50px #082842;
+}
+
+
+        .aboutme1 {
+            font-size: 32px;
+            margin-top: 2010px;
+            right: 600px;
+            color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+        }
+
+
+
+
+        .resume {
+            font-size: 160px;
+            margin-top: 2600px;
+            right: 420px;
+            color: #c7ba45;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: linkk;
+            font-weight: bold;
+            animation: shadowFade 3s ease-in-out infinite;
+        }
+
+        @keyframes shadowFade {
+            0% {
+                text-shadow: rgba(62, 66, 66, 0.44) -27px 84px 5px;
+            }
+
+            100% {
+                text-shadow: rgba(62, 66, 66, 0) -27px 84px 15px;
+            }
+        }
+        .resume span{
+  transition: .5s linear
+}
+.resume:hover span:nth-child(1){
+  margin-right: 5px
+}
+.resume:hover span:nth-child(2){
+  margin-left: 30px
+}
+.resume:hover span{
+  color: #e6e6e6;
+  text-shadow: 0 0 50px #082842;
+}
+
+
+        .education {
+            font-size: 50px;
+            margin-top: 2910px;
+            right: 950px;
+            color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: font;
+
+        }
+
+       
+
+        .linya1 {
+            position: absolute;
+            right: 530px;
+            top: 2910px;
+            object-fit: cover;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+
+        .elem10-16 {
+            font-size: 20px;
+            margin-top: 3332px;
+            right: 1250px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .elementary10-16 {
+            font-size: 20px;
+            margin-top: 3332px;
+            right: 990px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .elem16-20 {
+            font-size: 20px;
+            margin-top: 3233px;
+            right: 1248px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .elementary16-20 {
+            font-size: 20px;
+            margin-top: 3232px;
+            right: 980px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .elem20-22 {
+            font-size: 20px;
+            margin-top: 3132px;
+            right: 1240px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .elementary20-22 {
+            font-size: 20px;
+            margin-top: 3132px;
+            right: 942px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .elem24 {
+            font-size: 20px;
+            margin-top: 3032px;
+            right: 1240px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .elementary24-26 {
+            font-size: 20px;
+            margin-top: 3032px;
+            right: 965px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .work {
+            font-size: 50px;
+            margin-top: 2910px;
+            right: 170px;
+            color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: font;
+        }
+
+        .android {
+            font-size: 20px;
+            margin-top: 3030px;
+            right: 300px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .python {
+            font-size: 20px;
+            margin-top: 3260px;
+            right: 285px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .position-relative {
+            position: absolute;
+        }
+
+        .skill-cards-container {
+            position: absolute;
+            top: 3580px;
+            width: 100%;
+            right: 0px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .card-container {
+            display: inline-block;
+            width: 30%;
+            margin: 0 1%;
+        }
+
+        .card-container {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+        .card-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-container {
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .tt {
+            background-color: #f8f9fa;
+            top: 3740px;
+            font-size: 2rem;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        .border-radius-new {
+            border-radius: 15px;
+
+        }
+
+        .card-container {
+            margin-bottom: 1.5rem;
+        }
+
+        .skills {
+            font-size: 50px;
+            margin-top: 3460px;
+            right: 695px;
+            color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: font;
+            font-weight: bold;
+        }
+
+        .portfolio {
+            font-size: 160px;
+            margin-top: 5250px;
+            right: 390px;
+            color: #c7ba45;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: linkk;
+            font-weight: bold;
+            animation: shadowFade 3s ease-in-out infinite;
+        }
+
+        @keyframes shadowFade {
+            0% {
+                text-shadow: rgba(62, 66, 66, 0.44) -27px 84px 5px;
+            }
+
+            100% {
+                text-shadow: rgba(62, 66, 66, 0) -27px 84px 15px;
+            }
+        }
+        .portfolio span{
+  transition: .5s linear
+}
+.portfolio:hover span:nth-child(1){
+  margin-right: 5px
+}
+.portfolio:hover span:nth-child(2){
+  margin-left: 30px
+}
+.portfolio:hover span{
+  color: #e6e6e6;
+  text-shadow: 0 0 50px #082842;
+}
+
+
+        .project {
+            font-size: 80px;
+            margin-top: 5510px;
+            right: 620px;
+            color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: font;
+        }
+
+        .container1 {
+            position: absolute;
+            top: 5670px;
+            right: 194px;
+            display: flex;
+            color: #1a1a1a;
+            font-family: alevia;
+            font-weight: bold;
+            flex-wrap: wrap;
+            font-size: 20px;
+        }
+
+        .card1 {
+            position: relative;
+            background-color: #e6e6e6;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card1 img {
+            object-fit: cover;
+            display: block;
+            height: 350px;
+        }
+
+        .card1:hover img {
+            transform: scale(1.05);
+
+        }
+
+        .hover-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card1:hover .hover-text {
+            opacity: 1;
+        }
+
+        .inner-image {
+            position: absolute;
+            margin-top: -170px;
+            right: -160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+        }
+
+        .inner-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card1:hover .inner-image {
+            width: 50px;
+            height: 50px;
+            transform: scale(1.1);
+        }
+
+        .toggle {
+            display: none;
+        }
+
+        .clickable-image {
+            display: inline-block;
+            position: absolute;
+            transition: transform 0.3s ease;
+        }
+
+        .clickable-image:hover {
+            transform: scale(1.05);
+
+        }
+
+        .toggle:checked+.clickable-image+.hidden-text {
+            display: block;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        .hidden-text {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            margin-top: 10px;
+        }
+
+        .container2 {
+            position: absolute;
+            top: 6070px;
+            right: 194px;
+            display: flex;
+            color: #1a1a1a;
+            font-family: alevia;
+            font-weight: bold;
+            flex-wrap: wrap;
+            font-size: 20px;
+        }
+
+        .card2 {
+            position: relative;
+            background-color: #e6e6e6;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card2 img {
+            object-fit: cover;
+            display: block;
+            height: 350px;
+        }
+
+        .card2:hover img {
+            transform: scale(1.05);
+
+        }
+
+        .hover-text1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card2:hover .hover-text1 {
+            opacity: 1;
+        }
+
+        .inner-image1 {
+    position: absolute;
+    margin-top: -170px;
+    right: -160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.inner-image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card2:hover .inner-image1 {
+    width: 50px;
+    height: 50px;
+    transform: scale(1.1);
+}
+
+
+        .toggle0 {
+            display: none;
+        }
+
+        .clickable-image1 {
+            display: inline-block;
+            position: absolute;
+            transition: transform 0.3s ease;
+        }
+
+        .clickable-image1:hover {
+            transform: scale(1.05);
+
+        }
+
+        .toggle0:checked+.clickable-image1+.hidden-text1 {
+            display: block;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        .hidden-text1 {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            margin-top: 10px;
+        }
+
+
+     
+
+        .certification {
+            font-size: 50px;
+            margin-top: 4600px;
+            right: 555px;
+            color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: font;
+            font-weight: bold;
+        }
+
+        .apr {
+            font-size: 25px;
+            margin-top: 4760px;
+            right: 1005px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .feb {
+            font-size: 25px;
+            margin-top: 4760px;
+            right: 705px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .sept {
+            font-size: 25px;
+            margin-top: 4760px;
+            right: 545px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .sept1 {
+            font-size: 25px;
+            margin-top: 4760px;
+            right: 390px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .mar {
+            font-size: 25px;
+            margin-top: 4760px;
+            right: 260px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .download {
+            position: absolute;
+            top: 4850px;
+            right: 500px;
+            display: flex;
+
+        }
+
+        .download1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .download1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            -webkit-animation: bounce-top 3s infinite alternate both;
+            animation: bounce-top 3s infinite alternate both;
+        }
+
+        @-webkit-keyframes bounce-top {
+            0% {
+                -webkit-transform: translateY(-45px);
+                transform: translateY(-45px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+                opacity: 1;
+            }
+
+            24% {
+                opacity: 1;
+            }
+
+            40% {
+                -webkit-transform: translateY(-24px);
+                transform: translateY(-24px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            65% {
+                -webkit-transform: translateY(-12px);
+                transform: translateY(-12px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            82% {
+                -webkit-transform: translateY(-6px);
+                transform: translateY(-6px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            93% {
+                -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            25%,
+            55%,
+            75%,
+            87% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+
+            100% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce-top {
+            0% {
+                -webkit-transform: translateY(-45px);
+                transform: translateY(-45px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+                opacity: 1;
+            }
+
+            24% {
+                opacity: 1;
+            }
+
+            40% {
+                -webkit-transform: translateY(-24px);
+                transform: translateY(-24px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            65% {
+                -webkit-transform: translateY(-12px);
+                transform: translateY(-12px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            82% {
+                -webkit-transform: translateY(-6px);
+                transform: translateY(-6px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            93% {
+                -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            25%,
+            55%,
+            75%,
+            87% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+
+            100% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+                opacity: 1;
+            }
+        }
+
+
+        .downloadd:hover {
+            transform: scale(1.1);
+        }
+
+        .downloadd:hover img {
+            transform: scale(1.1);
+        }
+
+
+
+        .contact {
+            font-size: 160px;
+            margin-top: 6700px;
+            right: 390px;
+            color: #c7ba45;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: linkk;
+            font-weight: bold;
+            animation: shadowFade 3s ease-in-out infinite;
+        }
+        .contact span{
+  transition: .5s linear
+}
+.contact:hover span:nth-child(1){
+  margin-right: 5px
+}
+.contact:hover span:nth-child(2){
+  margin-left: 30px
+}
+.contact:hover span{
+  color: #e6e6e6;
+  text-shadow: 0 0 50px #082842;
+}
+
+
+        .contactss {
+            font-size: 45px;
+            margin-top: 7000px;
+            right: 598px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+            font-weight: bold;
+        }
+
+        .namee {
+            font-size: 25px;
+            margin-top: 7100px;
+            right: 600px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Alevia', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .youremail {
+            font-size: 25px;
+            margin-top: 7100px;
+            right: 250px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Alevia', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .subj {
+            font-size: 25px;
+            margin-top: 7200px;
+            right: 401px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Alevia', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .mess {
+            font-size: 25px;
+            margin-top: 7300px;
+            right: 401px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Alevia', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .subm {
+            font-size: 25px;
+            margin-top: 7420px;
+            right: 577px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Alevia', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            max-width: 500px;
+
+        }
+
+        .address {
+            position: absolute;
+            margin-top: 7130px;
+            right: 1245px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+        }
+
+        .address img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .address:hover {
+            transform: scale(1.2);
+        }
+
+        .myaddress {
+            font-size: 20PX;
+            margin-top: 7130px;
+            right:  1000px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+        }
+
+        .call {
+            position: absolute;
+            margin-top: 7230px;
+            right: 1245px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+        }
+
+        .call img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+
+        }
+
+        .call:hover {
+            transform: scale(1.2);
+        }
+
+        .mycall {
+            font-size: 20PX;
+            margin-top: 7240px;
+            right: 1070px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+        }
+
+        .emaill {
+            position: absolute;
+            margin-top: 7330px;
+            right: 1245px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+        }
+
+        .emaill img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .emaill:hover {
+            transform: scale(1.2);
+        }
+
+        .myemail {
+            font-size: 20px;
+            margin-top: 7340px;
+            right: 1020px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+        }
+
+        .map-container {
+            position: absolute;
+            width: 100%;
+            margin-top: 7400px;
+            right: 0px;
+        }
+
+        .footer-container {
+            right: 0px;
+            font-size: 20px;
+            margin-top: 7810px;
+            color: #e0d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-family: alevia;
+        }
+        .text-animation{
+    font-size: 34px ;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: 'Web Developer';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+.text-animation span::after{
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 80px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 2px solid var(--main-color);
+    }
+}
+@keyframes words{
+    0%,
+    20%{
+        content: 'Student';
+    }
+    21%,
+    40%{
+        content: 'Computer Engineering';
+    }
+    41%,
+    60%{
+        content: 'App Developer';
+    }
+    61%,
+    80%{
+        content: 'Web Developer';
+    }
+    81%,
+    100%{
+        content: '';
+    }
+}
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="up-icons">
+        <a href="#up"  class="up-icon">
+            <img src="uparrow.png" alt="downarrow"></a>
+    </div>
+    <div class="down-icons">
+        <a href="#down"  class="down-icon">
+            <img src="downarrow.png" alt="downarrow"></a>
+    </div>
+
+    <div class="sidebar">
+        <a href="#home" class="nav-item nav-link">Home</a>
+    </div>
+    <div class="sidebar1">
+        <a href="#aboutme" class="nav-item nav-link">About</a>
+    </div>
+    <div class="sidebar2">
+        <a href="#resume" class="nav-item nav-link">Resume</a>
+    </div>
+    <div class="sidebar3">
+        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+    </div>
+    <div class="sidebar4">
+        <a href="#contact" class="nav-item nav-link">Contact</a>
+    </div>
+    <div class="gmail">
+        <p>ejcorrea98@gmail.com <br>
+            +63 9460753810</p>
+    </div>
+    <div class="web-icons">
+        <a href="https://www.facebook.com/ej.correa.7?mibextid=ZbWKwL" target="_blank" class="web-icon">
+            <img src="fb.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/eeeejjjjjjjj_/" target="_blank" class="web-icon">
+            <img src="igg.png" alt="instagram">
+        </a>
+        <a href="https://github.com/ejmcorrea" target="_blank" class="web-icon">
+            <img src="github.png" alt="github">
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="web-icon">
+            <img src="email.png" alt="email">
+        </a>
+    </div>
+    <div class="down" id="down">
+        <p></p>
+    </div>
+    <div class="up" id="up">
+        <p></p>
+    </div>
+    <div class="home" id="home">
+        <p></p>
+    </div>
+    <div class="image-container2">
+        <a><img src="ejc.png" width="520px" class="image2"></a>
+    </div>
+
+    <div class="hello">
+        <p>Hello Everyone, I'm</p>
+    </div>
+
+    <div class="introduce">
+        <p>EARL JIM <br>
+            CORREA.</p>
+    </div>
+    <div class="cpe">
+        <p>Computer Engineering</p>
+    </div>
+    <div class="aboutme" id="aboutme">
+        <span>About Me</span>
+    </div>
+    <div class="aboutme1">
+        <p> I'm Earl Jim Correa, currently pursuing my Computer <br>
+            Engineering degree at the University of the East. My <br>
+            academic journey has equipped me with a solid experience<br>
+            in programming, circuit design,  cybersecurity. I'm <br>
+            passionate about leveraging technology to create solutions <br>
+            that improve everyday life, and I aim to specialize in embedded <br>
+            systems or software engineering. </p>
+    </div>
+    <div class="image-container1">
+        <a><img src="siej.png" class="image1"></a>
+    </div>
+    <div class="resume" id="resume">
+        <span>Resume</span>
+    </div>
+    <div class="education">
+        <p>Education</p>
+    </div>
+  
+    <div class="linya1">
+        <a><img src="linya.png" width="480px"></a>
+    </div>
+
+    <div class="elem10-16">
+        <p> • 2010-2016</p>
+    </div>
+    <div class="elementary10-16">
+        <p>Silangan Elementary<br>
+            School</p>
+    </div>
+    <div class="elem16-20">
+        <p> • 2016-2020</p>
+    </div>
+    <div class="elementary16-20">
+        <p>Silangan National High <br>
+            School</p>
+    </div>
+    <div class="elem20-22">
+        <p> • 2020-2022</p>
+    </div>
+    <div class="elementary20-22">
+        <p>Ramon Magsaysay Cubao <br>
+            High School (STEM)</p>
+    </div>
+    <div class="elem24">
+        <p> • 2022-2024 <br> (Present)</p>
+    </div>
+    <div class="elementary24-26">
+        <p>University of the East <br>
+            Computer Engineering</p>
+    </div>
+    <div class="work">
+        <p>Work Experience</p>
+    </div>
+    <div class="android">
+        <p> Mobile App Developer Intern.<br>
+            We developed a mobile app called Rescue Ranger <br>
+            using Android Studio. Included in our game are <br>
+            guessing a shape, adding and subtracting, colors,<br>
+            and spelling.
+        </p>
+    </div>
+    <div class="python">
+        <p>Game Developer(Activity/Project)<br>
+            Use TKinter with Python to create games. I created <br>
+            the following games: In Between Card, Guessing Card, <br>
+            and Jack en Poy.</p>
+    </div>
+    <div class="skills">
+        <p>Skills</p>
+    </div>
+    <div class="container pb-5">
+        <div class="column py-5 position-relative">
+            <div class="skill-cards-container">
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="adaptation.png" width="50px">
+                        <i class="lni lni-code"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Adaptability</h4>
+                        <p class="m-0">Flexibility in learning new tools and technologies as needed for game
+                            development.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="chat.png" width="50px">
+                        <i class="lni lni-select"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Communication</h4>
+                        <p class="m-0">Collaborating with team members and explaining technical concepts.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="skill.png" width="50px">
+                        <i class="lni lni-video"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Critical Thinking</h4>
+                        <p class="m-0">Analyzing problems, identifying patterns, and making data-driven decisions.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="chip.png" width="50px">
+                        <i class="lni lni-video"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Hardware Design</h4>
+                        <p class="m-0">Experience in circuit design and hardware troubleshooting.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="appdev.png" width="50px">
+                        <i class="lni lni-video"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Mobile App Development</h4>
+                        <p class="m-0">Create and design Android Studio apps using Kotlin.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="problem-solving.png" width="50px">
+                        <i class="lni lni-video"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Problem-Solving</h4>
+                        <p class="m-0">Troubleshoot issues and develop creative solutions for game development
+                            challenges..
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="programming.png" width="50px">
+                        <i class="lni lni-video"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Programming Languages</h4>
+                        <p class="m-0">Python, Java and Kotlin.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="time.png" width="50px">
+                        <i class="lni lni-video"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Time Management</h4>
+                        <p class="m-0">Prioritize tasks and manage time effectively to meet project deadlines.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="tt shadow-sm">
+                        <img src="webdev.png" width="50px">
+                        <i class="lni lni-video"></i>
+                    </div>
+                    <div class="p-5 shadow-sm border-radius-new bg-white">
+                        <h4 class="font-weight-bold mb-3">Web Development</h4>
+                        <p class="m-0"> HTML, CSS, JavaScript, and my framework is Bootstrap .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <span>Portfolio</span>
+    </div>
+    <div class="project">
+        <p>Project</p>
+    </div>
+    <div class="container1">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card1">
+                    <img src="guess.png" class="card-img-top" alt="Guessing Game">
+                    <div class="hover-text">
+                        <h1>Guessing Game</h1>
+                        <input type="checkbox" id="toggle1" class="toggle">
+                        <label for="toggle1" class="clickable-image">
+                            <img src="search.png" alt="More Info" class="inner-image">
+                        </label>
+                        <div class="hidden-text">"This is a guessing game I made <br>
+                                                  when I was first practicing how<br>
+                                                  to create games. It's a simple <br>
+                                                  game where I used Tkinter GUI <br>
+                                                  to build it." .</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card1">
+                    <img src="batopick.png" class="card-img-top" alt="Jack En Poy">
+                    <div class="hover-text">
+                        <h1>Jack En Poy</h1>
+                        <input type="checkbox" id="toggle2" class="toggle">
+                        <label for="toggle2" class="clickable-image">
+                            <img src="search.png" alt="More Info" class="inner-image">
+                        </label>
+                        <div class="hidden-text">"This is the second game I made, <br>
+                                                  called 'Jack En Poy' (or 'Bato <br>
+                                                  Bato Pick'). I improved by adding<br>
+                                                  images to the buttons and the background.<br> 
+                                                  I still used Tkinter GUI to build this game."</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card1">
+                    <img src="inbet.png" class="card-img-top" alt="InBetween">
+                    <div class="hover-text">
+                        <h1>In Between</h1>
+                        <input type="checkbox" id="toggle3" class="toggle">
+                        <label for="toggle3" class="clickable-image">
+                            <img src="search.png" alt="More Info" class="inner-image">
+                        </label>
+                        <div class="hidden-text">"This is the last game I made using <br>
+                                                  Tkinter GUI, called 'In Between Card.' <br>
+                                                  I learned a lot and improved my skills <br>
+                                                  further. I worked on this project with <br>
+                                                  someone else, and we both contributed <br>
+                                                  to debugging the code and designing the game."</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container2">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card2">
+                    <img src="aboutme.png" class="card-img-top" alt="About Me">
+                    <div class="hover-text1">
+                        <h1>About Me</h1>
+                        <input type="checkbox" id="toggle4" class="toggle0">
+                        <label for="toggle4" class="clickable-image1">
+                            <img src="search.png" alt="More Info" class="inner-image1">
+                        </label>
+                        <div class="hidden-text1">I created a project in Android Studio using Kotlin. 
+                                                  It's a simple app about myself, where I was just 
+                                                  starting to learn how to use Kotlin. Since it was 
+                                                  new to me, I was still figuring things out and could 
+                                                  only create basic features."
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card2">
+                    <img src="rocket.png" class="card-img-top" alt="Stop Watch">
+                    <div class="hover-text1">
+                        <h1>Stop Watch</h1>
+                        <input type="checkbox" id="toggle5" class="toggle0">
+                        <label for="toggle5" class="clickable-image1">
+                            <img src="search.png" alt="More Info" class="inner-image1">
+                        </label>
+                        <div class="hidden-text1">"I worked on a simple stopwatch project using 
+                                                   Android Studio and Kotlin. I collaborated with 
+                                                   someone else; I handled the debugging, and they
+                                                   took care of the design. When you press the start
+                                                   button, the time is hidden, and you have to guess 
+                                                   how much time has passed."</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card2">
+                    <img src="rescue.png" class="card-img-top" alt="Rescue Ranger">
+                    <div class="hover-text1">
+                        <h1>Rescue Ranger</h1>
+                        <input type="checkbox" id="toggle6" class="toggle0">
+                        <label for="toggle6" class="clickable-image1">
+                            <img src="search.png" alt="More Info" class="inner-image1">
+                        </label>
+                        <div class="hidden-text1">"The last project I worked on was a game called 
+                                                  'Rescue Ranger,' where I collaborated with someone 
+                                                   else. We created a children's game with different 
+                                                   activities like color, shape, spelling, and math. 
+                                                   We used Android Studio and Kotlin to build it."
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="certification">
+        <p>Certification</p>
+    </div>
+    <div class="apr">
+        <p>• Apr 2024 : <br>
+            Code Crash : Python <br>
+            Programming Challenge.</p>
+    </div>
+    <div class="feb">
+        <p>• Feb 2024 : <br>
+            Welcome to Flutterverse: <br>
+            A Hands-On Introduction <br>
+            to Cross-Platform Mobile <br>
+            App Development Workshop.
+        </p>
+    </div>
+    <div class="sept">
+        <p>• Sept 2023 : <br>
+            FIGMA 101: An <br>
+            introductory Ui <br>
+            Workshop for <br>
+            Beginners.
+        </p>
+    </div>
+    <div class="sept1">
+        <p>• Sept 2022 : <br>
+            GIT Workshop <br>
+            for Beginners.
+        </p>
+    </div>
+    <div class="mar">
+        <p>• Mar 2022 : <br>
+            Tinkercard + <br>
+            Arduino for <br>
+            Beginners.
+        </p>
+    </div>
+    <div class="download">
+        <a href="file:///C:/Users/ejcor/Downloads/EJCORREA_Resume.pdf" target="_blank" class="download1">
+            <img src="downloadd.png" alt="download"></a>
+    </div>
+    <div class="contact" id="contact">
+        <span>Contact</span>
+    </div>
+    <div class="contactss">
+        <p>Send A Message</p>
+    </div>
+
+    <div class="namee">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+    </div>
+    <div class="youremail">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Your Email">
+    </div>
+    <div class="subj">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subj" placeholder="Subject">
+    </div>
+    <div class="mess">
+        <label for="message" class="form-label">Message</label>
+        <input type="text" class="form-control" id="mess" placeholder="Message" maxlength="1000">
+    </div>
+    <div class="subm">
+        <input type="submit" class="btn btn-primary btn-lg" value="Send Message" onclick="sendMessage()">
+        <span class="submitting"></span>
+    </div>
+    <div class="address">
+        <a><img src="map.png"></a>
+    </div>
+    <div class="myaddress">
+        <p>Blk 11 Lot 7 Langka St,<br>
+            San Mateo Rizal, Phillipines</p>
+    </div>
+    <div class="call">
+        <a><img src="call.png"></a>
+    </div>
+    <div class="mycall">
+        <p>+63 9460753810</p>
+    </div>
+    <div class="emaill">
+        <a><img src="email1.png"></a>
+    </div>
+    <div class="myemail">
+        <p>ejcorrea98@gmail.com</p>
+    </div>
+    <div class="container map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482.49561152128615!2d121.15051273578261!3d14.657933875731292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b95d2adce1b9%3A0x44123eb810ed3649!2s498%20Langka%20St%2C%20San%20Mateo%2C%20Rizal!5e0!3m2!1sen!2sph!4v1724919876075!5m2!1sen!2sph" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white text-white text-center py-3">
+        <div class="container footer-container">
+            <p>&copy; 2024 Ej Correa. All Rights Reserved.</p>
+            <p>Follow me on:
+                <a href="#https://www.facebook.com/ej.correa.7?mibextid=ZbWKwL" class="text-white">Facebook</a> |
+                <a href="#https://www.instagram.com/eeeejjjjjjjj_/" class="text-white">Instagram</a> |
+                <a href="#https://github.com/ejmcorrea" class="text-white">Github</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
